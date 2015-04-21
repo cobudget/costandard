@@ -1,16 +1,16 @@
-# JavaScript Semi-Standard Style
+# JavaScript Co-Standard Style
 [![travis][travis-image]][travis-url]
 [![npm][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
 
-### One Semicolon for the Dark Lord on his dark throne
+### One Semicolon And Comma for the Dark Lord on his dark throne
 
-All the goodness of [feross/standard] with semicolons sprinkled on top.
+All the goodness of [feross/standard] with semicolons and dangling commas sprinkled on top.
 
 ## Install
 
 ```bash
-npm install semistandard
+npm install costandard
 ```
 
 ## Rules
@@ -18,6 +18,7 @@ npm install semistandard
 Importantly:
 
 - **semicolons**
+- **dangling commas in multiline literals**
 - Check [feross/standard] for the rest of the rules.
 
 ## Badge
@@ -25,41 +26,31 @@ Importantly:
 Use this in one of your projects? Include one of these badges in your readme to
 let people know that your code is using the standard style.
 
-[![js-semistandard-style](https://cdn.rawgit.com/flet/semistandard/master/badge.svg)](https://github.com/Flet/semistandard)
-
-```markdown
-[![js-semistandard-style](https://cdn.rawgit.com/flet/semistandard/master/badge.svg)](https://github.com/Flet/semistandard)
-```
-
-[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
-
-```markdown
-[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
-```
+TODO
 
 ## Usage
 
-The easiest way to use JavaScript Semi-Standard Style to check your code is to install it
+The easiest way to use JavaScript Co-Standard Style to check your code is to install it
 globally as a Node command line program. To do so, simply run the following command in
-your terminal (flag `-g` installs `semistandard` globally on your system, omit it if you want
+your terminal (flag `-g` installs `costandard` globally on your system, omit it if you want
 to install in the current working directory):
 
 ```bash
-npm install semistandard -g
+npm install costandard -g
 ```
 
-After you've done that you should be able to use the `semistandard` program. The simplest use
+After you've done that you should be able to use the `costandard` program. The simplest use
 case would be checking the style of all JavaScript files in the current working directory:
 
 ```
-$ semistandard
-Error: Use JavaScript Semi-Standard Style
+$ costandard
+Error: Use JavaScript Co-Standard Style
   lib/torrent.js:950:11: Expected '===' and instead saw '=='.
 ```
 
 ### Editor plugins
 
-Sublime users: Try [SublimeLinter-contrib-semistandard](https://github.com/Flet/SublimeLinter-contrib-semistandard) for linting in your editor!
+TODO
 
 ### What you might do if you're clever
 
@@ -69,10 +60,10 @@ Sublime users: Try [SublimeLinter-contrib-semistandard](https://github.com/Flet/
   {
     "name": "my-cool-package",
     "devDependencies": {
-      "semistandard": "*"
+      "costandard": "*"
     },
     "scripts": {
-      "test": "semistandard && node my-normal-tests-littered-with-semicolons.js"
+      "test": "costandard && node my-normal-tests-littered-with-semicolons.js"
     }
   }
   ```
@@ -90,10 +81,10 @@ Sublime users: Try [SublimeLinter-contrib-semistandard](https://github.com/Flet/
 
 See [feross/standard] for more information.
 
-[travis-image]: https://img.shields.io/travis/Flet/semistandard.svg?style=flat-square
-[travis-url]: https://travis-ci.org/Flet/semistandard
-[npm-image]: https://img.shields.io/npm/v/semistandard.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/semistandard
-[downloads-image]: https://img.shields.io/npm/dm/semistandard.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/semistandard
+[travis-image]: https://img.shields.io/travis/cobudget/costandard.svg?style=flat-square
+[travis-url]: https://travis-ci.org/cobudget/costandard
+[npm-image]: https://img.shields.io/npm/v/costandard.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/costandard
+[downloads-image]: https://img.shields.io/npm/dm/costandard.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/costandard
 [feross/standard]: https://github.com/feross/standard

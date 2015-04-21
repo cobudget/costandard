@@ -17,11 +17,8 @@ var series = require('run-series')
 var test = require('tape')
 
 var TMP = path.join(__dirname, '..', 'tmp')
-var SEMISTANDARD = path.join(__dirname, '..', 'bin', 'cmd.js')
-
+var COSTANDARD = path.join(__dirname, '..', 'bin', 'cmd.js')
 var URLS = [
-  'https://github.com/Flet/cursorfun.git',
-  'https://github.com/bnolan/scenevr.git'
 ]
 
 var MODULES = {}
@@ -54,7 +51,7 @@ test('lint repos', function (t) {
     return function (cb) {
       var cwd = path.join(TMP, name)
       console.log('!!!!!!!!!' + cwd)
-      spawn(SEMISTANDARD, [], { cwd: cwd }, function (err) {
+      spawn(COSTANDARD, [], { cwd: cwd }, function (err) {
         t.error(err, name)
         cb(null)
       })
